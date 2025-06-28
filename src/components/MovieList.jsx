@@ -14,7 +14,7 @@ export const MovieList = () => {
         <div>
             <h1>Movie list</h1>
             {movies.map((movie) => (
-                <div key={movie.id}>{movie.name} <button onClick={() => handleRemoveMovie(movie.id)}>Delete Movie</button></div>
+                <div className="movie-container" key={movie.id}>{movie.name} <button onClick={() => handleRemoveMovie(movie.id)}>Delete Movie</button></div>
             ))}
         </div>
     )
